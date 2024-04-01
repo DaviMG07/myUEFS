@@ -7,7 +7,7 @@ cada LE possui dois modos de operação: "Normal mode" e "Dynamic Arithmetic Mod
 diferenças:
 
 Normal mode é ideal para aplicações lógicas gerais e funções combinacionais, enquanto que Dynamic Arithmetic Mode é ideal para operações aritméticas como somadoras, contadores, comparadores, acumuladoras e funções de paridade de múltiplos bits;
-Normal mode utiliza  
+Normal mode utiliza um LUT de quatro inputs, enquanto que o Dynamic Arithmetic utiliza quatro LUTs de dois inputs;
 
 Normal Mode
 The normal mode is suitable for general logic applications and combinational
@@ -45,7 +45,6 @@ and synchronous load options are LAB-wide signals that affect all registers in t
 LAB. The Quartus II software automatically places any registers that are not used by
 the counter into other LABs. The addnsub LAB-wide signal controls whether the LE
 acts as an adder or subtractor.
-
 
 ## b)
 
