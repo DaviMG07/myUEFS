@@ -7,68 +7,96 @@ typedef struct node{
   struct node* prev;
 } *node;
 
+//print the linked list
+void printll(node);
 
-int printll(node);
-int append(node*, int);
-int push(node*, int);
-
-/*TODO
-int clear(node*); 
-int insert(node*, int, int);  
-int pop(node, int);
+//return the index of first occurrence of given value 
 int search(node, int);
-*/
+
+//return number of nodes in a linked list 
+int len(node);
+
+//insert node in the end of linked list (doubly linked list without tail)
+void append(node*, int);
+
+//insert node in the beginning of linked list (doubly linked list)
+void push(node*, int);
+
+//insert node at given position
+void insert(node*, int, int);
+
+//delete node by index (doubly linked list without tail)
+void delete(node*, int);
+
+//delete all nodes in linked list 
+void clear(node*);
+
+//copy linked list
+node *copy(node);
+
 
 int main(void){
-  system("clear||cls");
+  system("cls||clear");
 
   node head = NULL;
 
-  append(&head, 10);
-  append(&head, 20);
-  push(&head, 8);
-  //insert(&head, 7, 1);
+  int i = 1;
+
+  printf("------------------------start------------------------\n");
   printll(head);
-  printf("%d", clear(&head));
+
+  printf("\nappend\n");
+  append(&head, 0);
+  printll(head);
+
+  printf("\nappend\n");
+  append(&head, 2);
+  printll(head);
+
+  printf("\nappend\n");
+  append(&head, 3);
+  printll(head);
+
+  printf("\ninsert at index %d\n", i);
+  insert(&head, i, 1);
+  printll(head);
+
+  printf("\npush\n");
+  push(&head, -1);
+  printll(head);
+
+  printf("\ndelete at index 1\n");
+  delete(&head, 0);
+  printll(head);
+
+  printf("\nclear\n");
+  clear(&head);
+  printll(head);
+
+  printf("\n------------------------end------------------------\n");
+  printll(head);
+  printf("---------------------------------------------------\n");
+
+  printf("\nsearch number 10\n", search(head, 10));
+  printf("%d\n", search(head, 0));
+
+  printf("\nlength of linked list\n");
+  printf("%d\n", len(head));
 
   printf("\n");
   return 0;
 }
 
-int printll(node head){
-  if (head == NULL){
-    printf("lista está vazia.");
-    return 0;
+void printll(node head){
+  printf("NULL -> ");
+  while (head){
+    printf("%d -> ", head->value);
+    head = head->next;
   }
-  node current = head;
-  while (current != NULL){
-    fflush(stdout);
-    printf("%d ", current->value);
-    current = current->next;
-  }
-  return 1;
+  printf("NULL\n");
 }
 
-int append(node* head, int value){
-  node current;
-  node new = (node)malloc(sizeof(node));
-  new->value = value;
-  new->next = NULL;
-
-  if (*head == NULL){
-    *head = new;
-    return 0;
-  }
-  current = *head;
-  while (current->next != NULL){
-    current = current->next;
-  }
-  new->prev = current;
-  current->next = new;
-  return 1;
-}
-
-int push(node* head, int value){
+void append(node* head, int value){
   node new = (node)malloc(sizeof(node));
   new->value = value;
   new->next = NULL;
@@ -76,27 +104,117 @@ int push(node* head, int value){
 
   if (*head == NULL){
     *head = new;
-    return 0;
+    return;
   }
   node current = *head;
 
-  new->next = current;
-  current->prev = new;
-  *head = new;
-  return 1;
-}
-
-
-/*TODO
-int clear(node* head){
-  if (*head == NULL){
-    return 0;
-  }
-  node current = *head;
-  node next = current->next;
   while (current){
-    current = next;
+    if (current->next == NULL){
+      current->next = new;
+      new->prev = current;
+      return;
+    }
+    current = current->next;
   }
-  return 1;
 }
-*/
+
+void push(node* head, int value){
+  node new = (node)malloc(sizeof(node));
+  new->value = value;
+  new->next = NULL;
+  new->prev = NULL;
+
+  if (*head == NULL){
+    *head = new;
+    return;
+  }
+
+  new->next = *head;
+  (*head)->prev = new;
+  *head = new;
+}
+
+void insert(node* head, int index, int value){
+  node new = (node)malloc(sizeof(node));
+  new->value = value;
+  new->next = NULL;
+  new->prev = NULL;
+
+  if (*head == NULL){
+    *head = new;
+    return;
+  }
+
+  int counter = 0;
+  node current = *head;
+  if (!index){
+    push(head, value);
+    return;
+  }
+  while (current->next && counter < index - 1){
+    ++counter;
+    current = current->next;
+  }
+  new->next = current->next;
+  new->prev = current;
+  current->next = new;
+}
+
+int search(node head, int value){
+  int counter = 0;
+  while (head){
+    if ((head)->value == value){
+      return counter;
+    }
+    ++counter;
+    head = (head)->next;
+  }
+  return -1;
+}
+
+int len(node head){
+  int counter = 0;
+  while (head){
+    ++counter;
+    head = (head)->next;
+  }
+  return counter;
+}
+
+void delete(node* head, int index){
+  int counter = 0;
+  node current = *head;
+
+  while (current){
+    if (counter == index){
+      if (current->prev != NULL){
+        current->prev->next = current->next;
+      } else {
+        *head = current->next;
+      }
+      if (current->next != NULL){
+        current->next->prev = current->prev;
+      }
+      if (current == *head){
+        *head = current->next;
+      }
+      free(current);
+      return;
+    }
+    ++counter;
+    current = current->next;
+  }
+}
+
+void clear(node* head){
+  node current = *head;
+  while (*head){
+    current = *head;
+    *head = current->next;
+    free(current);
+  }
+}
+
+node copy(node head){
+  return NULL;
+}
