@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "8460861026f9016f",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0f8b3c97249d675",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2acfb658fc30719b",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "src/circuitos_digitais_MI/Relatorio01.canvas",
+                "viewState": {
+                  "x": -87.5,
+                  "y": 7,
+                  "zoom": 0
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1ec6b8ceea7e8b1c",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d56ea2428949bfe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea7a3ed564ceeab9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7689bba4bb1ee28c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0feadfd8b38b9609",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "74935806755c0e0c",
+    "type": "split",
+    "children": [
+      {
+        "id": "b9e1cbcadf277310",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b3100d7960ece8a2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "src/circuitos_digitais_MI/Relatorio01.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "84be0c1f809388d6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "src/circuitos_digitais_MI/Relatorio01.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4360f083821955f0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e8a0f7988b99754b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/circuitos_digitais_MI/Relatorio01.canvas"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "2acfb658fc30719b",
+  "lastOpenFiles": [
+    "src/circuitos_digitais_MI/Relatorio01.md",
+    "src/circuitos_digitais_MI/Relatorio01.canvas",
+    "Relatorio01.canvas",
+    "src/circuitos_digitais_MI/roteiro01.md",
+    "src/circuitos_digitais_MI/preLab01.md",
+    "README.md"
+  ]
+}
