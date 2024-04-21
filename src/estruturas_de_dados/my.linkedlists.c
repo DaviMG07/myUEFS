@@ -10,7 +10,7 @@ typedef struct node{
 //print the linked list
 void printll(node);
 
-//return the index of first occurrence of given value 
+//return the index of first occurrence of given value, if not found, return -1
 int search(node, int);
 
 //return number of nodes in a linked list 
@@ -31,9 +31,13 @@ void delete(node*, int);
 //delete all nodes in linked list 
 void clear(node*);
 
-//copy linked list
-node *copy(node);
-
+/*TODO
+* copy linked list
+* node copy(node);
+*
+* return the adress of first occurrence of given value 
+* node searchN(node, int);
+*/
 
 int main(void){
   system("cls||clear");
@@ -57,6 +61,9 @@ int main(void){
   append(&head, 3);
   printll(head);
 
+  printf("\nlength of linked list\n");
+  printf("%d\n", len(head));
+
   printf("\ninsert at index %d\n", i);
   insert(&head, i, 1);
   printll(head);
@@ -65,9 +72,12 @@ int main(void){
   push(&head, -1);
   printll(head);
 
-  printf("\ndelete at index 1\n");
+  printf("\ndelete at index 0\n");
   delete(&head, 0);
   printll(head);
+
+  printf("\nsearch position of number 3\n", search(head, 1));
+  printf("%d\n", search(head, 3));
 
   printf("\nclear\n");
   clear(&head);
@@ -76,12 +86,6 @@ int main(void){
   printf("\n------------------------end------------------------\n");
   printll(head);
   printf("---------------------------------------------------\n");
-
-  printf("\nsearch number 10\n", search(head, 10));
-  printf("%d\n", search(head, 0));
-
-  printf("\nlength of linked list\n");
-  printf("%d\n", len(head));
 
   printf("\n");
   return 0;
@@ -215,6 +219,3 @@ void clear(node* head){
   }
 }
 
-node copy(node head){
-  return NULL;
-}
