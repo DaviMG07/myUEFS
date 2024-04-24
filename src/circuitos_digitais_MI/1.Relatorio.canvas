@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"f06569a21685b6fd","type":"text","text":"Problema 01","x":-125,"y":-30,"width":250,"height":60},
+		{"id":"fc79199efa15e538","type":"text","text":"Conceitos","x":200,"y":-30,"width":250,"height":60},
+		{"id":"5074f5a4b3051181","type":"text","text":"Introdução","x":-125,"y":100,"width":250,"height":60},
+		{"id":"431ce5ca61d36d3a","type":"text","text":"Metodologia","x":-440,"y":-30,"width":250,"height":60},
+		{"id":"41c7a563d4b4aa3d","type":"text","text":"Resultados","x":-440,"y":-160,"width":250,"height":60},
+		{"id":"fc00e0894925327d","type":"text","text":"Conclusões","x":200,"y":-160,"width":250,"height":60},
+		{"id":"6b2e6084dfa03cb8","type":"file","file":"src/circuitos_digitais_MI/1.Relatorio.md","x":-590,"y":100,"width":400,"height":400},
+		{"id":"0dc290726845db28","type":"text","text":"Requisitos","x":-125,"y":-160,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"fb8f698f4357927b","fromNode":"f06569a21685b6fd","fromSide":"bottom","toNode":"5074f5a4b3051181","toSide":"top"}
+	]
+}

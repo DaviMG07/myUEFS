@@ -4,25 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "e0f8b3c97249d675",
+        "id": "1def5e0baacdad7a",
         "type": "tabs",
         "children": [
           {
-            "id": "2acfb658fc30719b",
+            "id": "42c6d5e4f8e9fe77",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "ff29a12567b5bc36",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "src/circuitos_digitais_MI/Relatorio01.canvas",
+                "file": "src/circuitos_digitais_MI/1.Relatorio.canvas",
                 "viewState": {
-                  "x": -87.5,
-                  "y": 7,
-                  "zoom": 0
+                  "x": -70,
+                  "y": 170,
+                  "zoom": -0.31438128583401426
                 }
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/circuitos_digitais_MI/Relatorio01.canvas",
+                "file": "src/circuitos_digitais_MI/1.Relatorio.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/circuitos_digitais_MI/Relatorio01.canvas",
+                "file": "src/circuitos_digitais_MI/1.Relatorio.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/circuitos_digitais_MI/Relatorio01.canvas"
+                "file": "src/circuitos_digitais_MI/1.Relatorio.canvas"
               }
             }
           }
@@ -149,13 +158,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2acfb658fc30719b",
+  "active": "ff29a12567b5bc36",
   "lastOpenFiles": [
-    "src/circuitos_digitais_MI/Relatorio01.md",
-    "src/circuitos_digitais_MI/Relatorio01.canvas",
+    "src/circuitos_digitais_MI/1.Problema.drawio.png",
+    "src/circuitos_digitais_MI/VerilogMap.drawio.png",
+    "src/utils/docs/TEC498_2024_1-Problema_1_v0.docx.pdf",
+    "src/circuitos_digitais_MI/1.Problema.drawio.png.crswap",
+    "src/circuitos_digitais_MI/1.Conclusoes.md",
+    "src/circuitos_digitais_MI/1.Metodologia.md",
+    "src/utils/imgs/(empty).md",
+    "src/circuitos_digitais_MI/1.Problema.md",
+    "src/circuitos_digitais_MI/INDEX.md",
+    "src/circuitos_digitais_MI/1.Roteiro.md",
+    "src/circuitos_digitais_MI/1.Resultados.md",
+    "src/circuitos_digitais_MI/1.Relatorio.canvas",
+    "src/circuitos_digitais_MI/1.PreLab.md",
+    "Introducao01.md",
+    "src/circuitos_digitais_MI/1.Relatorio.md",
+    "src/utils/imgs/z.mapLife.drawio.png",
+    "src/utils/docs/max2_mii5v1.pdf",
+    "src/utils/docs/Djalma de Pinho Reboucas de Oliveira - Sistemas, Organização e Métodos (2006).pdf",
+    "src/utils/imgs",
+    "src/utils/docs",
+    "src/utils",
+    "algoritmos_e_programacao_I/algoritmos_e_programacao_I.md",
+    "src/index.md",
+    "algoritmos_e_programacao_I",
+    "src/algoritmos_e_programacao_I.md",
     "Relatorio01.canvas",
-    "src/circuitos_digitais_MI/roteiro01.md",
-    "src/circuitos_digitais_MI/preLab01.md",
     "README.md"
   ]
 }
